@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetsList status="ok">
-	<File url="files/images/autumn.jpg"/>
-	<File url="files/images/butterfly.jpg"/>
-	<File url="files/images/lime.jpg"/>
-	<File url="files/images/orange.jpg"/>
-	<File url="files/images/raven.jpg"/>
-	<File url="files/images/tomatoes.jpg"/>
-	<File url="files/video/airport.mp4"/>
-	<File url="files/video/forest.mp4"/>
-	<File url="files/video/grill.mp4"/>
+	<File url="https://evgeniy-polyakov.github.io/signage-editor-demo/files/images/autumn.jpg"/>
+	<File url="https://evgeniy-polyakov.github.io/signage-editor-demo/files/images/butterfly.jpg"/>
+	<File url="https://evgeniy-polyakov.github.io/signage-editor-demo/files/images/lime.jpg"/>
+	<File url="https://evgeniy-polyakov.github.io/signage-editor-demo/files/images/orange.jpg"/>
+	<File url="https://evgeniy-polyakov.github.io/signage-editor-demo/files/images/raven.jpg"/>
+	<File url="https://evgeniy-polyakov.github.io/signage-editor-demo/files/images/tomatoes.jpg"/>
+	<File url="https://evgeniy-polyakov.github.io/signage-editor-demo/files/video/airport.mp4"/>
+	<File url="https://evgeniy-polyakov.github.io/signage-editor-demo/files/video/forest.mp4"/>
+	<File url="https://evgeniy-polyakov.github.io/signage-editor-demo/files/video/grill.mp4"/>
 </AssetsList>
