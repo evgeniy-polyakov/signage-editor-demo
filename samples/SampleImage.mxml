@@ -1,0 +1,44 @@
+<document:Document width="1280" height="720" status="ok" path="Untitled2.mxml" swf="" type="image" usePreloader="false"
+				   applicationComplete="{if (systemManager.isTopLevelRoot()) {stage.align = 'TL'; stage.scaleMode = 'exactFit'}}" name="Untitled2" version="3.17.1"
+				   xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:document="com.signage.document.*"
+				   xmlns:controls="com.signage.model.controls.*" xmlns:animations="com.signage.model.animations.*" xmlns:transitions="com.signage.model.transitions.*">
+	<controls:Canvas width="1280" height="720" duration="0" loop="false" backgroundColor="#ffffff" backgroundAlpha="1.000" dataService="">
+		<controls:Image name="Image 1" x="18.25" y="15.8" width="640" height="479" type="image" source="/signage-editor-demo/files/images/butterfly.jpg" interval="0">
+			<controls:sources>
+				<fx:String>/signage-editor-demo/files/images/butterfly.jpg</fx:String>
+			</controls:sources>
+		</controls:Image>
+		<controls:Image name="Image 2" x="682.25" y="21.6" width="331.19999999999993" height="247.88249999999996" type="image"
+						source="/signage-editor-demo/files/images/butterfly.jpg" interval="0">
+			<controls:sources>
+				<fx:String>/signage-editor-demo/files/images/butterfly.jpg</fx:String>
+			</controls:sources>
+			<controls:effects>
+				<animations:BlurAnimation endTime="2" startTime="0" endValue="8" easing="linear" startValue="0"/>
+			</controls:effects>
+		</controls:Image>
+		<controls:Image name="Image 3" x="929.2" y="165.3" width="331.19999999999993" height="247.88249999999996" type="image"
+						source="/signage-editor-demo/files/images/butterfly.jpg" interval="0">
+			<controls:sources>
+				<fx:String>/signage-editor-demo/files/images/butterfly.jpg</fx:String>
+			</controls:sources>
+			<controls:effects>
+				<animations:ContrastAnimation endTime="2" startTime="0" endValue="0.54" easing="linear" startValue="0"/>
+			</controls:effects>
+		</controls:Image>
+		<controls:Image name="Image 4" x="691.4" y="433.45" width="331.19999999999993" height="247.88249999999996" type="image"
+						source="/signage-editor-demo/files/images/butterfly.jpg" interval="0">
+			<controls:sources>
+				<fx:String>/signage-editor-demo/files/images/butterfly.jpg</fx:String>
+			</controls:sources>
+			<controls:effects>
+				<animations:ShineAnimation endTime="2" startTime="0" alpha="0.68" angle="30" easing="linear" position="0.45" color="16777215" blur="76"/>
+			</controls:effects>
+		</controls:Image>
+	</controls:Canvas>
+	<s:Rect width="100%" height="100%">
+		<s:fill>
+			<s:SolidColor alpha="0"/>
+		</s:fill>
+	</s:Rect>
+</document:Document>

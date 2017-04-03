@@ -1,0 +1,18 @@
+<document:Document width="1280" height="720" status="ok" path="Untitled2.mxml" swf="" type="playlist" usePreloader="false" applicationComplete="{if (systemManager.isTopLevelRoot()) {stage.align = 'TL'; stage.scaleMode = 'exactFit'}}" name="Untitled2" version="3.17.1" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:document="com.signage.document.*" xmlns:controls="com.signage.model.controls.*" xmlns:animations="com.signage.model.animations.*" xmlns:transitions="com.signage.model.transitions.*">
+	<controls:Canvas width="1280" height="720" duration="0" loop="false" backgroundColor="#000000" backgroundAlpha="1.000" dataService="">
+		<controls:Playlist name="" x="0" y="0" width="1280" height="720" type="playlist">
+			<controls:transition>
+				<transitions:MoveRightTransition duration="1" easing="easeoutquint"/>
+			</controls:transition>
+			<controls:slides>
+				<controls:Slide type="image" source="/signage-editor-demo/files/images/lime.jpg" duration="3"/>
+				<controls:Slide type="video" source="/signage-editor-demo/files/video/forest.mp4" duration="41.51466666666666"/>
+			</controls:slides>
+		</controls:Playlist>
+	</controls:Canvas>
+	<s:Rect width="100%" height="100%">
+		<s:fill>
+			<s:SolidColor alpha="0"/>
+		</s:fill>
+	</s:Rect>
+</document:Document>

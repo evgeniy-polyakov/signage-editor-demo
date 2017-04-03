@@ -1,0 +1,21 @@
+<document:Document width="1280" height="720" status="ok" path="Untitled1.mxml" swf="" type="animation" usePreloader="false"
+				   applicationComplete="{if (systemManager.isTopLevelRoot()) {stage.align = 'TL'; stage.scaleMode = 'exactFit'}}" name="Untitled1" version="3.17.1"
+				   xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:document="com.signage.document.*"
+				   xmlns:controls="com.signage.model.controls.*" xmlns:animations="com.signage.model.animations.*" xmlns:transitions="com.signage.model.transitions.*">
+	<controls:Canvas width="1280" height="720" duration="4.35" loop="false" backgroundColor="#ffffff" backgroundAlpha="1.000" dataService="">
+		<controls:Image name="Image 1" x="332.8" y="142.95" width="640" height="426" type="image" source="/signage-editor-demo/files/images/autumn.jpg" interval="0">
+			<controls:sources>
+				<fx:String>/signage-editor-demo/files/images/autumn.jpg</fx:String>
+			</controls:sources>
+			<controls:animations>
+				<animations:MoveInAnimation endTime="3" x="-1" startTime="0" y="0" easing="easeoutelastic"/>
+				<animations:ScaleInAnimation endTime="4.35" x="1.1" startTime="2" y="1.1" easing="easeoutback"/>
+			</controls:animations>
+		</controls:Image>
+	</controls:Canvas>
+	<s:Rect width="100%" height="100%">
+		<s:fill>
+			<s:SolidColor alpha="0"/>
+		</s:fill>
+	</s:Rect>
+</document:Document>
