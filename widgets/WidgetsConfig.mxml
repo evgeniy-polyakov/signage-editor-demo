@@ -1,0 +1,161 @@
+<widgets:Widgets xmlns:fx="http://ns.adobe.com/mxml/2009"
+				 xmlns:controls="com.signage.model.controls.*"
+				 xmlns:widgets="com.signage.widgets.*">
+
+	<controls:Widget type="list" name="List Widget"
+					 icon="list/icon.png"
+					 cursor="list/cursor.png"
+					 display="list/display1.swf">
+		<controls:parameters>
+			<controls:WidgetParameter name="template" value=""
+									  processor="com.signage.widgets.processors.PlayersListItemProcessor"
+									  processorParams="width=200&amp;height=100&amp;color=#ffffff">
+				<widgets:EditButton label="Item Template" contentWidth="50"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="items" value=""
+									  processor="com.signage.widgets.processors.ListItemsProcessor">
+				<widgets:EditButton label="Select Items" contentWidth="50"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="dataService">
+				<widgets:ServiceInput label="Data Service"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="itemsCount" value="1">
+				<widgets:StepperInput label="Items Count" minimum="1" maximum="999" step="1" contentWidth="50"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="direction" value="Vertical">
+				<widgets:DropDownList label="Mode" enumeration="Vertical,Horizontal"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="scrollDirection" value="None"/>
+			<controls:WidgetParameter name="scrollSpeed" value="50"/>
+			<controls:WidgetParameter name="stopTime" value="0"/>
+			<controls:WidgetParameter name="playing" value="false" serializable="false"/>
+		</controls:parameters>
+	</controls:Widget>
+
+	<controls:Widget type="weather" name="Weather Widget"
+					 icon="weather/icon.png"
+					 cursor="weather/cursor.png"
+					 display="weather/display.swf">
+		<controls:parameters>
+			<controls:WidgetParameter name="woeid" value="">
+				<widgets:StringInput label="WOEID" restrict="0-9" maxChars="256"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="units" value="C">
+				<widgets:DropDownList label="Units" enumeration="C,F"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="edition" value="Flexible"
+									  processor="com.signage.widgets.processors.WidgetScaleProcessor"
+									  processorParams="Vertical=0.5&amp;Horizontal=4&amp;Flexible=0">
+				<widgets:DropDownList label="Edition" enumeration="Flexible,Vertical,Horizontal"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="bgColor" value="#FFE1E1E1" type="Number">
+				<widgets:ColorInput label="BG Color"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="fontColor" value="#FF4E4E4E" type="Number">
+				<widgets:ColorInput label="Font Color"/>
+			</controls:WidgetParameter>
+		</controls:parameters>
+	</controls:Widget>
+
+	<controls:Widget type="datetime" name="Time Widget"
+					 icon="datetime/icon.png"
+					 cursor="datetime/cursor.png"
+					 display="datetime/display.swf">
+		<controls:parameters>
+			<controls:WidgetParameter name="text" value="DD-MM-YY HH:NN:SS">
+				<widgets:StringInput label="Pattern" maxChars="256"
+									 helpDialog="com.signage.ui.dialogs.DateTimeHelpDialog"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="bgColor" value="#00FFFFFF" type="Number">
+				<widgets:ColorInput label="BG Color"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="fontColor" value="#FF000000" type="Number">
+				<widgets:ColorInput label="Font Color"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="padding" value="0,0,0,0" type="String">
+				<widgets:PaddingInput label="Padding"/>
+			</controls:WidgetParameter>
+			<controls:WidgetParameter name="fontFamily" value="Arial" type="String"/>
+			<controls:WidgetParameter name="fontSize" value="12" type="Number"/>
+			<controls:WidgetParameter name="bold" value="false" type="Boolean"/>
+			<controls:WidgetParameter name="italic" value="false" type="Boolean"/>
+			<controls:WidgetParameter name="underline" value="false" type="Boolean"/>
+		</controls:parameters>
+	</controls:Widget>
+
+	<controls:Widget type="html" name="HTML Widget"
+					 icon="html/icon.png"
+					 cursor="html/cursor.png"
+					 display="html/html.swf">
+		<controls:parameters>
+			<controls:WidgetParameter name="sources" value="" type="Array"/>
+		</controls:parameters>
+	</controls:Widget>
+
+	<controls:Widget type="pdf" name="PDF Widget"
+					 icon="pdf/icon.png"
+					 cursor="pdf/cursor.png"
+					 display="pdf/pdf.swf">
+		<controls:parameters>
+			<controls:WidgetParameter name="sources" value="" type="Array"/>
+		</controls:parameters>
+	</controls:Widget>
+
+	<!--<controls:Widget type="sample" name="Sample Widget"-->
+	<!--icon="sample/icon.png"-->
+	<!--cursor="sample/cursor.png"-->
+	<!--display="sample/display.swf">-->
+	<!--<controls:parameters>-->
+	<!--<controls:WidgetParameter name="StringParam" value="SomeString" type="String">-->
+	<!--<widgets:StringInput label="String" restrict="a-zA-Z" maxChars="10"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--<controls:WidgetParameter name="NumberParam" value="1" type="Number">-->
+	<!--<widgets:NumberInput label="Number" signed="false" integer="false"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--<controls:WidgetParameter name="BooleanParam" value="true" type="Boolean">-->
+	<!--<widgets:CheckBox label="Boolean"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--<controls:WidgetParameter name="ARGBParam" value="#ffcccccc" type="Number">-->
+	<!--<widgets:ColorInput label="ARGB"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--<controls:WidgetParameter name="RGBParam" value="#cccccc" type="Number">-->
+	<!--<widgets:ColorInput label="RGB" transparent="false"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--<controls:WidgetParameter name="PercentsParam" value="50" type="Number">-->
+	<!--<widgets:SliderInput label="Percents" min="0" max="100" step="1" unit="%"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--<controls:WidgetParameter name="DegreesParam" value="0" type="Number">-->
+	<!--<widgets:SliderInput label="Degrees" min="-180" max="180" step="1" unit="°"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--<controls:WidgetParameter name="PixelsParam" value="5" type="Number">-->
+	<!--<widgets:SliderInput label="Pixels" min="1" max="10" step="0.1" unit="px"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--<controls:WidgetParameter name="AlignParam" value="center" type="String">-->
+	<!--<widgets:DropDownList label="Align" enumeration="left,center,right"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--</controls:parameters>-->
+	<!--</controls:Widget>-->
+
+	<!--<controls:TextWidget type="sampleText" name="Sample Text Widget"-->
+	<!--icon="sampleText/icon.png"-->
+	<!--cursor="sampleText/cursor.png"-->
+	<!--display="">-->
+	<!--<controls:parameters>-->
+	<!--<controls:WidgetParameter name="StringParam" value="SomeString" type="String">-->
+	<!--<widgets:StringInput label="String" restrict="a-zA-Z" maxChars="10"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--</controls:parameters>-->
+	<!--</controls:TextWidget>-->
+
+	<!--<controls:ImageWidget type="sampleImage" name="Sample Image Widget"-->
+	<!--icon="sampleImage/icon.png"-->
+	<!--cursor="sampleImage/cursor.png"-->
+	<!--display="">-->
+	<!--<controls:parameters>-->
+	<!--<controls:WidgetParameter name="StringParam" value="SomeString" type="String">-->
+	<!--<widgets:StringInput label="String" restrict="a-zA-Z" maxChars="10"/>-->
+	<!--</controls:WidgetParameter>-->
+	<!--</controls:parameters>-->
+	<!--</controls:ImageWidget>-->
+
+</widgets:Widgets>
